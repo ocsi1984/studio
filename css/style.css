@@ -1,0 +1,103 @@
+
+/* Alap beállítások */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #fff8c6 url('../images/butterfly.gif') repeat;
+    background-size: 150px;
+    color: #333;
+}
+
+/* Fejléc */
+header {
+    background-color: #fff48f;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #004d00;
+    font-weight: bold;
+}
+
+/* Hero szekció */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+/* Galéria */
+.galerie {
+    padding: 40px 20px;
+    text-align: center;
+}
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+}
+.carousel img {
+    height: 200px;
+    border-radius: 12px;
+}
+
+/* Kontakt */
+.kontakt {
+    background: #f9f9f9;
+    padding: 40px 20px;
+}
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+button {
+    background-color: #79c779;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Térkép szekció */
+.map {
+    padding: 20px;
+}
+
+/* Lábléc */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobil reszponzivitás */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+}
